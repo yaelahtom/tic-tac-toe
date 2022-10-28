@@ -1,7 +1,7 @@
 * {
     vertical-align: baseline;
     font-weight: inherit;
-    font-family: inherit;
+    font-family: 'Source Code Pro', monospace;
     font-style: inherit;
     font-size: 100%;
     border: 0 none;
@@ -9,3 +9,50 @@
     padding: 0;
     margin: 0;
 }
+
+body {
+    background-color: #FFFCF9;
+    /* height: 100vh; */
+}
+
+header {
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+}
+
+header>p {
+    font-size: 3rem;
+}
+
+
+.container {
+    margin: auto;
+    border: 5px solid #FF6978;
+    width: 400px;
+    height: 400px;
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container>.column {
+    /* border: 1px solid red; */
+    flex-grow: 1;
+    display: flex;
+    flex-basis: 0;
+}
+
+.column>div {
+    border: 1px solid #B1EDE8;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 0;
+}
+
+/* .box {
+    color: black;
+    background-color: black;
+} */
